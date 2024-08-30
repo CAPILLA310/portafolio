@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap');
-
+html{
+  zoom: 100%;
+}
 body {
-  background-color: gray;
+  background: rgb(70, 161, 197);
+  background-image: url("../img/fondodeporta.jpg");
+  background-repeat: no-repeat,no-repeat;
+  background-attachment: fixed;
+  background-position:left top,right bottom;
   margin: 0;
   font-family: "Roboto", serif;
   font-weight: 400;
@@ -10,10 +16,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
+/*-----barra----*/
 .navbar {
   display: block;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(77, 59, 184);
   height: 50px;
   width: 230px;
   border-radius: 30px;
@@ -42,7 +48,7 @@ body {
   display: none;
   position: sticky;
   top: 20px;
-  background-color: black;
+  background-color: rgb(70, 28, 138);
   height: 283px;
   width: 60px;
   border-radius: 30px;
@@ -51,22 +57,16 @@ body {
   margin-right: 0px;
 }
 
-.tt {
-  font-size: large;
-  color: black;
-  text-decoration: underline;
-}
-
+/*-----tarjeta de presentacion-----*/
 .container {
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
   max-width: 800px;
   margin: 25px auto;
-  margin-left: 20px;
+  margin-bottom: 1px;
 }
 
 .seccion {
-  background-color: white;
+  background-color: rgb(239, 242, 247);
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -74,21 +74,17 @@ body {
   margin-bottom: 1px;
   border-radius: 10px;
 }
-.subseccion {
-  width: 50%;
-  padding: 5px;
-}
 
 .dot {
   height: 10px;
   width: 10px;
-  background-color: green;
+  background-color: rgb(16, 224, 16);
   border-radius: 30px;
 }
 
 .status {
   display: flex;
-  border: 1px solid rgba(128, 128, 128, 0.651);
+  border: 1px solid rgba(62, 29, 153, 0.911);
   padding: 6px;
   border-radius: 15px;
   margin-right: 40px;
@@ -98,10 +94,10 @@ body {
   margin: 0 12px;
 }
 
-.foto {
+.foto{
   max-width: 90%;
   border-radius: 15px;
-  height: 200px;
+  height: 300px;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -111,75 +107,179 @@ body {
   font-size: xx-large;
   font-weight: 300;
 }
-
+/*botones*/
 .btn-black {
-  background-color: black;
-  color: white;
+  background-color: rgb(34, 12, 85);
+  color: rgb(211, 197, 230);
   padding: 20px;
   border-radius: 30px;
   cursor: pointer;
 }
 
 .btn-white {
-  background-color: white;
-  color: black;
+  background-color: rgb(211, 197, 230);
+  color: rgba(34, 12, 85);
   height: 50px;
   border-radius: 30px;
   text-decoration: underline;
   cursor: pointer;
 }
 .btn-black:hover{
-    background-color: #fff;
-    color: black;
+    background-color: rgb(211, 197, 230);
+    color: rgb(34, 12, 85);
     cursor: pointer;
 }
 .btn-white:hover{
-    background-color: black;
-    color: #fff;
+    background-color:rgb(34, 12, 85);
+    color: rgb(211, 197, 230);
     cursor: pointer;
 }
-
 .imagenes {
   height: 70px;
   width: 70px;
-  border: 2px solid rgb(226, 224, 224);
+  border: 2px solid rgb(83, 39, 185);
   border-radius: 5%;
-}
-
-.iconos {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  width: 90%;
 }
 
 .imagen {
   display: flex;
   height: 150px;
   width: 190px;
-  border: 2px solid rgb(18, 18, 18);
+  border: 2px solid rgb(135, 106, 212);
   border-radius: 5%;
   cursor: pointer;
 }
 
-.nom {
-  font-weight: 400;
+.section1 {
+  display: flex;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+.escu {
+  background-color: #5b46b8;
+  color: #fcfcfc;
+  padding: 20px;
+  border-radius: 7px;
+  border: none;
+  width: 60%;
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.herramientas{
+  background-color: #926db4;
+  color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  border: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+/*------datos educativos----*/
+ .menu {
+  padding-top: 10px;
+  margin-bottom: 80px;
+  background-color: rgb(222, 201, 245);
+}
+.menu .titulo {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 40px;
+}
+ .menu .contenedor-menu,
+.menu .contenedor-menu2 {
+  border: 2px solid #642481;
+  background: transparent;
+  padding: 2px;
+  overflow: hidden;
+}
+.menu article {
+  width: 50%; 
+  float: left;
+  padding: 20px;
+}
+.menu .categoria {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.menu .platillo {
+  
+  border-bottom: 4px dotted #80399c;
+  overflow: hidden;
+}
+.menu .nombre {
+  font-family: "Lora", serif;
+  margin: 5px 0 6px 0;
+  font-style: italic;
+  font-size: 16px;
+  color: #5f457c;
+  text-decoration: none;
+  text-align: center;
 }
 .esc {
-  text-decoration: underline;
-  color: black;
+  font-family: "Lora", serif;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.menu .year {
+  display: flex;
+  border: 1px solid rgb(135, 149, 143);
+  padding: 3px;
+  border-radius: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(113, 75, 148);
+  margin: 1px 0 5px 0;
+}
+/*----cetificado-img------*/
+
+.galeria {
+  overflow: hidden;
+}
+.galeria .caja-blanca{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+.certi{
+  height: 70px;
+  width: 70px;
+  border: 2px solid rgb(83, 39, 185);
+  border-radius: 5%;
+
+}
+.certi {
+  display: flex;
+  height: 150px;
+  width: 190px;
+  border: 2px solid rgb(135, 106, 212);
+  border-radius: 5%;
   cursor: pointer;
 }
-
-.year {
-  display: flex;
-  border: 1px solid rgba(128, 128, 128, 0.651);
-  padding: 6px;
-  border-radius: 15px;
-  margin-right: 275px;
+.galeria .certi {
+width: 30%;
+margin-bottom: 10px;
 }
-
+.galeria .certi img{
+  width: 100;
+  vertical-align: top;
+  opacity: .7;
+}
+.galeria .certi  img:hover{
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
 .field {
   margin-bottom: 10px;
 }
@@ -189,7 +289,7 @@ body {
   
   display: block;
   font-size: 14px;
-  color: black;
+  color: rgb(66, 17, 99);
 }
 
 .contacto {
@@ -202,7 +302,7 @@ body {
   line-height: 1.5;
   font-size: 14px;
   border-radius: 10px;
-  border-color: rgb(27, 129, 224);
+  border-color: rgb(162, 27, 224);
   cursor: pointer;
 }
 
@@ -211,29 +311,30 @@ input[type="submit"] {
   display: block;
   padding: 4px 10px;
   font-size: 14px;
-  background-color: blue;
-  color: white;
+  background-color: rgb(153, 0, 255);
+  color: rgb(205, 192, 226);
   border-radius: 30px;
   cursor: pointer;
   height: 50px;
   width: 110px;
 }
 
+
 @media only screen and (max-width: 650px) {
   .container {
     height: auto;
   }
-  .seccion {
+  .seccion1 {
     flex-direction: column;
   }
   .subseccion {
     width: 100%;
   }
-  .iconos {
+  .escu{
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .imagenes {
+  .foto{
     flex-direction: row;
     flex-wrap: wrap;
   }
